@@ -4,3 +4,18 @@ Author: Curso Front End
 Description: Nuestro primer tema de Wordpress
 Version: 1.0.0
 */
+
+header .navbar .navbar-collapse ul {
+	display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header .navbar .navbar-collapse ul li {
+	margin-left: 10px;
+}
+
+header .navbar .navbar-collapse ul li a {
+	color: white;
+}

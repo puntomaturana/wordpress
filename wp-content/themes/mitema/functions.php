@@ -12,4 +12,9 @@ function mitema_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mitema_scripts');
 
+function mitema_menus() {
+	register_nav_menu('main-menu', __('Menú principal'));
+}
+add_action('init', 'mitema_menus');
+
 ?>
