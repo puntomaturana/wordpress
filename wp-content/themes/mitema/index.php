@@ -1,4 +1,3 @@
 <?php get_header(); ?>
-<?php //get_template_part('header'); ?>
-<?php //get_template_part('footer'); ?>
+<?php get_template_part('publicaciones'); ?>
 <?php get_footer(); ?>

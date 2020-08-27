@@ -17,4 +17,6 @@ function mitema_menus() {
 }
 add_action('init', 'mitema_menus');
 
+add_theme_support('post-thumbnails');
+
 ?>
