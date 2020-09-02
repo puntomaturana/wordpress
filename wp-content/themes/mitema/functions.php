@@ -12,11 +12,26 @@ function mitema_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mitema_scripts');
 
+//registrar un menu
 function mitema_menus() {
 	register_nav_menu('main-menu', __('Menú principal'));
 }
 add_action('init', 'mitema_menus');
 
+//registrar un sidebar
+function mitema_sidebar() {
+	register_sidebar(
+		array(
+			'id' => 'sidebar-1',
+			'name' => __('Sidebar del post'),
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>'
+		)
+	);
+}
+add_action('widgets_init', 'mitema_sidebar');
+
+// dar soporte a las imagenes destacadas
 add_theme_support('post-thumbnails');
 
 ?>
